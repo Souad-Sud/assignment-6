@@ -3,52 +3,42 @@
     --bkg2 : #5D5A6D;
     --bkg3 : #BD424F;
     --bkg4 : #16192C;
+    --bkg5 : #FFFFFF;
+    --bkg6 : #0f0b48ad;
+    --bkg6 : rgb(245, 241, 233);
+    --shadow : rgba(168, 166, 166, 0.56) 0px 22px 70px 4px;
 }
- 
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-color: var(--bkg4);
-     margin: 0;
-     padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-   
+.header {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {  
     font-family: "Irish Grover", serif;
     font-weight: 700;
     font-style: normal;
     color: wheat;
     text-align: center;
-    font-size: 3rem;
-      
-      
+    font-size: 3rem;          
 }
-header {
- 
-    margin: 0;
-    padding: 0;
-}
+
 .main {
     background-color: var(--bkg1);
     border-radius: 20px;
     margin: 100px 50px 60px 50px;
-   
-     border: 1px solid var(--bkg1);
+    border: 1px solid var(--bkg1);
     box-shadow: rgba(168, 166, 166, 0.56) 0px 22px 70px 4px;
-}
-.footer {
-      margin: 0;
-      padding: 0;
-      border: 1px solid white;
-      height: 50px;
-      color: white;
-      text-align: center;
-}
-
- .container {
-    display: flex;
-    flex-direction: column;
-    
 }
 
 .marvel-container {
@@ -56,16 +46,10 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     margin: 20px;
-
-}
-
-.marvel-title {
-    color: rgb(245, 241, 233);
-    font-size: 1rem;
-    text-align: center;
-    
 }
 
 .marvel-item {
@@ -76,4 +60,55 @@ header {
     border: 1px solid rgb(122, 81, 81);
     margin: 4px;
     padding: 5px;
+}
+
+.marvel-title {
+    color: rgb(245, 241, 233);
+    font-size: 1rem;
+    text-align: center;    
+}
+ 
+.footer {
+    margin: 0;
+    padding: 0;
+    border: 1px solid white;
+    height: 50px;
+    color: white;
+    text-align: center;
+}
+
+@media (min-width: 375px) {
+
+    .marvel-item {
+        padding: 0;
+    }
+
+    img {
+        border-radius: 10px 10px 0 0;
+        padding: 0;
+        margin: 0;
+    }
+    
+}
+
+@media (min-width: 360px) {
+    img {
+        border-radius: 10px 10px 0 0;
+        padding: 0;
+        margin: 0;
+    }
+    .marvel-item {
+        padding: 0;
+    }
+}
+
+@media (min-width: 344px) {
+    img {
+        border-radius: 10px 10px 0 0;
+        padding: 0;
+        margin: 0;
+    }
+    .marvel-item {
+        padding: 0;
+    }
 }
