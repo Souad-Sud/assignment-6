@@ -1,0 +1,79 @@
+:root {
+    --bkg1 : #292C4F;
+    --bkg2 : #5D5A6D;
+    --bkg3 : #BD424F;
+    --bkg4 : #16192C;
+}
+ 
+
+body {
+    background-color: var(--bkg4);
+     margin: 0;
+     padding: 0;
+}
+
+h1 {
+   
+    font-family: "Irish Grover", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: wheat;
+    text-align: center;
+    font-size: 3rem;
+      
+      
+}
+header {
+ 
+    margin: 0;
+    padding: 0;
+}
+.main {
+    background-color: var(--bkg1);
+    border-radius: 20px;
+    margin: 100px 50px 60px 50px;
+   
+     border: 1px solid var(--bkg1);
+    box-shadow: rgba(168, 166, 166, 0.56) 0px 22px 70px 4px;
+}
+.footer {
+      margin: 0;
+      padding: 0;
+      border: 1px solid white;
+      height: 50px;
+      color: white;
+      text-align: center;
+}
+
+ .container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.marvel-container {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.marvel-title {
+    color: rgb(245, 241, 233);
+    font-size: 1rem;
+    text-align: center;
+    
+}
+
+.marvel-item {
+    background-color: #0f0b48ad;
+    height: 300px;
+    width: 150px;
+    border-radius: 10px;
+    border: 1px solid rgb(122, 81, 81);
+    margin: 4px;
+    padding: 5px;
+}
