@@ -1,5 +1,5 @@
 $(() => {
-    const API_ENDPOINT = "http://gateway.marvel.com/v1/public/characters?ts=1&apikey=0c47c0880ef702d5028f5e05fa8b81a4&hash=ff9812235d4d48256fda759d7f351dd9";
+    const API_ENDPOINT = "https://gateway.marvel.com/v1/public/characters?ts=1&apikey=0c47c0880ef702d5028f5e05fa8b81a4&hash=ff9812235d4d48256fda759d7f351dd9";
     
     const getCharacters = async () => {
         let response = await fetch(API_ENDPOINT);
