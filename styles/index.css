@@ -19,7 +19,17 @@ body {
     padding: 0;
 }
 
+a {
+    font-family: "Irish Grover", serif;
+    color: wheat;
+    font-size: 1.4rem;
+}
+
 .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
@@ -111,4 +121,13 @@ h1 {
     .marvel-item {
         padding: 0;
     }
+}
+
+/*Discover page*/
+.marvel-container button {
+    font-family: "Irish Grover", serif;
+    background-color: wheat;
+    padding: 10px 50px;
+    font-size: 1.6rem;
+    border-radius: 8px;
 }
