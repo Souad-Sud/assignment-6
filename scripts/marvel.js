@@ -12,8 +12,9 @@ $(() => {
      for(let i = 0; i < data.data.results.length; i++) {
         let marvelName = data.data.results[i];
         content += "<div class='marvel-item'>";
-        content += "<img src='" + marvelName.thumbnail.path + "/portrait_xlarge." + marvelName.thumbnail.extension + "' class='imaggge'/>";
+        content += "<img src='" + marvelName.thumbnail.path + "." + marvelName.thumbnail.extension + "' class='imaggge'/>";
         content += "<h2 class='marvel-title'>" + marvelName.name + "</h2>" ;
+        content += `<p>${marvelName.description}</p>`
         content += "</div>";              
         }
         marvelC.innerHTML = content

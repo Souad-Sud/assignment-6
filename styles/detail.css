@@ -1,0 +1,56 @@
+* {
+    font-family: "Irish Grover", serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.marvel-characterst-button {
+    padding: 10px 35px;
+    font-size: 2rem;
+    text-align: center;
+    width: 300px;
+    margin: 10px auto;
+     
+}
+.marvel-name {
+    color: white;
+}
+
+.marvel-characters {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+ 
+    align-items: center;
+}
+
+p {
+    color: white;
+    font-size: 1.3rem;
+    padding: 30px;
+    margin: 30px;
+}
+
+ img {
+    width: 800px;
+    height: 500px;
+ }
+
+ @media screen and (max-width:768px ) {
+    .main {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    }
+
+    .marvel-characterst-button {
+    width: auto;
+    }
+    img {
+        width: 100%;
+    }
+
+}
