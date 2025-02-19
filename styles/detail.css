@@ -2,6 +2,10 @@
     font-family: "Irish Grover", serif;
 }
 
+a {
+    text-align: center;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -15,6 +19,7 @@
     margin: 10px auto;
      
 }
+
 .marvel-name {
     color: white;
 }
@@ -22,9 +27,13 @@
 .marvel-characters {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
- 
     align-items: center;
+    width: 500px;
+    margin: 50px auto;   
+}
+
+.collection-link {
+    color: beige;
 }
 
 p {
@@ -36,14 +45,23 @@ p {
 
  img {
     width: 800px;
-    height: 500px;
+    height: auto;
  }
 
  @media screen and (max-width:768px ) {
     .main {
     display: flex;
     flex-direction: column;
-    width: auto;
+    margin: 5px auto;
+   
+    }
+    .collection-link {
+       width: 300px;
+       overflow: hidden;
+    }
+    .marvel-characters {
+      
+        width: 300px;
     }
 
     .marvel-characterst-button {
@@ -52,5 +70,4 @@ p {
     img {
         width: 100%;
     }
-
 }

@@ -12,8 +12,10 @@ $(() => {
 
         items.forEach(item => {
             $(".marvel-characters").append(`<h2 class="marvel-name ">${item.name}</h2>`)
-            $(".marvel-characters").append( "<img src='" + item.thumbnail.path + "." + item.thumbnail.extension + "' class='imaggge'/>");
-            $(".marvel-characters").append( `<p class="marvel-description">${item.description}</p>`);
+            $(".marvel-characters").append( "<img src='" + item.thumbnail.path + "." + item.thumbnail.extension + "' class='marve-image'/>");
+            $(".marvel-characters").append( `<p>${item.modified}</p>`);
+            $(".marvel-characters").append( `<a href="${item.comics.collectionURI}" class="collection-link">${item.comics.collectionURI}</a>`);
+
        })
 
     }
