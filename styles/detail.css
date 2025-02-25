@@ -1,73 +1,59 @@
 * {
     font-family: "Irish Grover", serif;
 }
-
+body {
+    box-sizing: border-box;
+}
 a {
     text-align: center;
 }
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
 
 .main {
+    margin: 100px 100px;
+    
+}
+.marvel-detail {
+    padding: 20px;
+    margin: 100px 0;
+    color: wheat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.image-container {
+     height: 500px;
+     width: 300px; 
+    flex-basis: 20%;
+}
+.detail-container {
+    flex-basis: 50%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
  
-.marvel-characterst-button {
-    padding: 10px 35px;
-    font-size: 2rem;
-    text-align: center;
-    width: 300px;
-    margin: 10px auto;
-     
-}
-
-.marvel-name {
-    color: white;
-}
-
-.marvel-characters {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    margin: 50px auto;   
-}
-
-.collection-link {
-    color: beige;
-}
-
-p {
-    color: white;
-    font-size: 1.3rem;
-    padding: 30px;
-    margin: 30px;
-}
-
- img {
-    width: 800px;
-    height: auto;
- }
-
- @media screen and (max-width:768px ) {
+@media screen and (max-width: 830px ) {
     .main {
-    display: flex;
-    flex-direction: column;
-    margin: 5px auto;
-   
+        margin: 0;
+        padding: 0;
     }
-    .collection-link {
-       width: 300px;
-       overflow: hidden;
+    .marvel-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    .marvel-characters {
-      
-        width: 300px;
-    }
-
-    .marvel-characterst-button {
-    width: auto;
-    }
-    img {
-        width: 100%;
-    }
+ 
 }
+
